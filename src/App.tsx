@@ -5,13 +5,13 @@ import Timer from "./components/Timer";
 function App() {
   return (
     <>
-      <div className="card">
+      <div
+        className="card"
+        style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+      >
         <Counter />
-        <br></br>
         <Timer />
       </div>
-
-     
     </>
   );
 }

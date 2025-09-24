@@ -23,15 +23,16 @@ const Timer: React.FC = () => {
   return (
     <div style={{ marginTop: "16px" }}>
       <div>
-        <h4 style={{ color: "black" }}>
+        <h4 style={{ color: "black", marginBottom: "12px" }}>
           Timer: {seconds} second{seconds !== 1 ? "s" : ""}
         </h4>
       </div>
-      <br></br>
-      <button onClick={startPause} style={{ marginRight: "8px" }}>
-        {isRunning ? "Pause" : "Start"}
-      </button>
-      <button onClick={reset}>Reset</button>
+      <div>
+        <button onClick={startPause} style={{ marginRight: "8px" }}>
+          {isRunning ? "Pause" : "Start"}
+        </button>
+        <button onClick={reset}>Reset</button>
+      </div>
     </div>
   );
 };
