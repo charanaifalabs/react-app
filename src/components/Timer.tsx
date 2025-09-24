@@ -23,7 +23,9 @@ const Timer: React.FC = () => {
   return (
     <div style={{ marginTop: "16px" }}>
       <div>
-        Timer: {seconds} second{seconds !== 1 ? "s" : ""}
+        <h4 style={{ color: "black" }}>
+          Timer: {seconds} second{seconds !== 1 ? "s" : ""}
+        </h4>
       </div>
       <br></br>
       <button onClick={startPause} style={{ marginRight: "8px" }}>
